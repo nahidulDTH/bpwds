@@ -106,7 +106,7 @@ transition: all 0.4s;
 
 }
 .pop{
-  
+  overflow: auto;
   backdrop-filter: blur(10px);
   height: 100vh;
   width: 100%;
@@ -133,7 +133,6 @@ display: none;
   border: none;
   margin: 10px;
   cursor: pointer;
- 
 }
 .btn:active{
   background-color: red;
@@ -141,6 +140,9 @@ display: none;
 }
 
 .user{
+  margin-bottom: 10px;
+  font-family: bangla1;
+  color: #000000;
   border: 2px solid #4680ff;
   height: 100px;
   width: 95%;
@@ -150,22 +152,29 @@ display: none;
 }
 .user1{
   height: 100px;
-  background-color: red;
-  
+  border-right: 1px solid #4680ff; 
+  width: 100%;
 }
 .user2{
   height: 100px;
-  background-color: yellow;
+  border-right: 1px solid #4680ff; 
+  width: 100%;
 }
 .user3 {
   height: 100px;
-  background-color: green;
+  width: 100%;
 }
 .imgbox img{
   height: 100px;
+  width: 100px;
   border-radius: 100px;
 }
-
+.string{
+  font-size: 18pt;
+}
+a{
+  text-decoration-line: none;
+}
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
