@@ -8,3 +8,6 @@ function back() {
 function userlist(){
     document.getElementById("pop1").style.display="block"
 }
+function topion(){
+    document.getElementById("pop1").style.display="none"
+}
