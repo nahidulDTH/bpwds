@@ -21,7 +21,10 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+
 .nav {
+
+  position: fixed;
   top: 0;
   width: 100%;
   height: 60px;
@@ -29,7 +32,15 @@ body {
   background-color: #fff;
   background-image: linear-gradient(30deg, rgb(0, 255, 145), rgb(0, 128, 255));
 }
-
+.botomnav{
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: #fff;
+  background-image: linear-gradient(-30deg, rgb(0, 255, 145), rgb(0, 128, 255));
+}
 .title {
   font-size: 33px;
   font-family: bangla1;
@@ -40,11 +51,13 @@ body {
   position: absolute;
   top: 10px;
 }
-
+.ddx{
+ display: none;
+}
 .navsid {
   top: 10px;
   position: absolute;
-  right: 200px;
+  right: 100px;
 }
 
 .sw {
@@ -62,16 +75,90 @@ body {
   font-family: bangla1;
 }
 
+.navdat{
+  color: white;
+}
+.ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.li{
+  display: inline;
+}
+.navbttn{
+text-decoration-line: none;
+color: auto;
+cursor: pointer;
+color: #fff;
+transition: all 0.4s;
+}
+.icon{
+  font-size: 30px;
+}
+.navtxt{
+  font-size: 15pt;
 
+}
+.navbttn:hover{
+  color: red;
+  font-size: 33px;
 
+}
+.pop{
+  
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(177, 177, 177, 0.571);
+  position: fixed;
+  bottom: 0;
+  animation: youi 1s;
+}
+@keyframes youi {
+  0%{
+height: 0vh;
+  }
+  100%{
+    height: 100vh;
+      }
+}
+.vcc{
+display: none;
+}
+.btn{
+  font-size: 33px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+ 
+}
+.btn:active{
+  background-color: red;
+  color: azure;
+}
 
 /*=================================== css media quruy mobile ============================= */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+  .ddx{
+    display: block;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: red;
+    color: white;
+    margin: 8px;
+    text-align: center;
+  }
   .w80 {
     width: 96%;
   }
-
+  .navtxt{
+    font-size: 15pt;
+    display: none;
+  }
   .navsid {
     display: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -115,7 +202,10 @@ body {
   cursor: pointer;
   color: wheat;
 }
-
+.title {
+  font-size: 25px;
+  font-family: bangla1;
+}
 
 
 }

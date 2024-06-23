@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <link rel="shortcut icon" href="img/448260650_2757559237733604_8677310498956021285_n.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ভবানীপুর আতাইকুলা</title>
+  <title>ভবানীপুর সমাজ সেবা যুব সংগঠন</title>
 </head>
-
 <body>
   <header class="nav ct">
     <div class="w80">
       <span class="title navtitle">
-        ভবানীপুর আতাইকুলা
+        <span id="txt"></span>
       </span>
-      <div class="searchbtn">
+      <div onclick="serchapp()" class="searchbtn">
         <i class="bi bi-search"></i>
       </div>
-
-      <div class="navsid">
-
+      <div id="navsid" class="navsid">
         <select class="sw" name="" id="">
-          <option>1</option>
+          <option>ভবানীপুর</option>
         </select>
-
         <select class="sw" name="" id="">
-          <option>1</option>
+          <option>পশ্চিমপাড়া</option>
+          <option>মধ্যপাড়া</option>
+          <option>পূর্বপাড়া</option>
         </select>
-
         <select class="sw" name="" id="">
-          <option>1</option>
+          <option>মসজিদ</option>
+          <option>মাদ্রাসা</option>
+          <option>বিদ্যালয়</option>
+          <option>দোকান</option>
+          <option>ঈদগা</option>
+          <option>খেলার মাঠ</option>
         </select>
-
+        <br><br>
+        <span onclick="back()" class="ddx">Back</span>
       </div>
-
-
     </div>
-
-
   </header>
+<section>
+  <nav class="botomnav">
+<center>
+  <br>
+  <dev class="navdat">
+    <ul class="ul">
+      <li class="li">
+        <a href="#" onclick="userlist()" class="navbttn">
+          <span class="icon"><i class="bi bi-person-lines-fill"></i></span>
+          <span class="navtxt">সবার তালিকা</span>
+        </a>
+      </li>&nbsp;&nbsp;
+      <li class="li">
+        <a href="#" class="navbttn">
+          <span class="icon"><i class="bi bi-plus-square-dotted"></i></span>
+          <span class="navtxt">নতুন যুক্ত করুন</span>
+        </a>
+      </li>&nbsp;&nbsp;
+      <li class="li">
+        <a href="#" class="navbttn">
+          <span class="icon"><i class="bi bi-info-circle"></i></span>
+          <span class="navtxt">বিজ্ঞপ্তি</span>
+        </a>
+      </li>&nbsp;&nbsp;
+      <li class="li">
+        <a href="#" class="navbttn">
+          <span class="icon"><i class="bi bi-facebook"></i></span>
+          <span class="navtxt">Facebook</span>
+        </a>
+      </li>&nbsp;&nbsp;
+    </ul>
+  </dev>
+</center>
+  </nav>
 
 
+<div id="pop1" class="pop vcc">
+<button class="btn"> <i class="bi bi-x-lg"></i></button>
+</div>
+
+
+
+
+
+
+</section>
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script>
+
+    new TypeIt("#txt", {
+      strings: "ভবানীপুর সমাজ সেবা যুব সংগঠন",
+      speed: 100,
+      waitUntilVisible: true,
+    }).go();
+  </script>
 </body>
 
 </html>
