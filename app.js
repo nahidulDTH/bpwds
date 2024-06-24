@@ -7,11 +7,19 @@ function back() {
 
 function userlist(){
     document.getElementById("pop1").style.display="block"
+    topion1();
 }
 function topion(){
     document.getElementById("pop1").style.display="none"
 }
 
+function userlist1(){
+  document.getElementById("pop2").style.display="block";
+  topion();
+}
+function topion1(){
+  document.getElementById("pop2").style.display="none"
+}
 
 function dataLoad1(){
   document.getElementById("dataload1");
@@ -31,3 +39,5 @@ function dataLoad2(){
   }
   
 }
+
+

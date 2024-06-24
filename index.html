@@ -2,1010 +2,104 @@
 <html lang="en">
 
 <head>
-  <link rel="shortcut icon" href="img/448260650_2757559237733604_8677310498956021285_n.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ভবানীপুর সমাজ সেবা যুব সংগঠন</title>
+    <link rel="shortcut icon" href="img/448260650_2757559237733604_8677310498956021285_n.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ভবানীপুর সমাজ সেবা যুব সংগঠন</title>
 </head>
 
 <body>
-  <header class="nav ct">
-    <div class="w80">
-      <span class="title navtitle">
-        <span id="txt"></span>
-      </span>
-      <div onclick="serchapp()" class="searchbtn">
-        <i class="bi bi-search"></i>
-      </div>
-      <div id="navsid" class="navsid">
-        <select onchange="dataLoad1()" class="sw" name="" id="dataload1">
-          <option value="1">ভবানীপুর</option>
-        </select>
-        <select onchange="dataLoad2()" class="sw" name="" id="dataload2">
-          <option value="1">পশ্চিমপাড়া</option>
-          <option value="2">মধ্যপাড়া</option>
-          <option value="3">পূর্বপাড়া</option>
-        </select>
-        <select onchange="dataLoad3()" class="sw" name="" id="dataload3">
-          <option value="1">মসজিদ</option>
-          <option value="2">মাদ্রাসা</option>
-          <option value="3">বিদ্যালয়</option>
-          <option value="4">দোকান</option>
-          <option value="5">ঈদগা</option>
-          <option value="6">খেলার মাঠ</option>
-        </select>
-        <br><br>
-        <span onclick="back()" class="ddx">Back</span>
-      </div>
+    <header class="nav ct">
+        <div class="w80">
+            <span class="title navtitle">
+                <span id="txt"></span>
+            </span>
+            <div onclick="serchapp()" class="searchbtn">
+                <i class="bi bi-search"></i>
+            </div>
+            <div id="navsid" class="navsid">
+                <select onchange="dataLoad1()" class="sw" name="" id="dataload1">
+                    <option value="1">ভবানীপুর</option>
+                </select>
+                <select onchange="dataLoad2()" class="sw" name="" id="dataload2">
+                    <option value="1">পশ্চিমপাড়া</option>
+                    <option value="2">মধ্যপাড়া</option>
+                    <option value="3">পূর্বপাড়া</option>
+                </select>
+                <select onchange="dataLoad3()" class="sw" name="" id="dataload3">
+                    <option value="1">মসজিদ</option>
+                    <option value="2">মাদ্রাসা</option>
+                    <option value="3">বিদ্যালয়</option>
+                    <option value="4">দোকান</option>
+                    <option value="5">ঈদগা</option>
+                    <option value="6">খেলার মাঠ</option>
+                </select>
+                <br><br>
+                <span onclick="back()" class="ddx">Back</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <nav class="botomnav">
+            <center>
+                <br>
+                <dev class="navdat">
+                    <ul class="ul">
+                        <li class="li">
+                            <a href="#" onclick="userlist()" class="navbttn">
+                                <span class="icon"><i class="bi bi-person-lines-fill"></i></span>
+                                <span class="navtxt">সবার তালিকা</span>
+                            </a>
+                        </li>&nbsp;&nbsp;
+                        <li class="li">
+                            <a href="#" class="navbttn">
+                                <span class="icon"><i class="bi bi-plus-square-dotted"></i></span>
+                                <span class="navtxt">নতুন যুক্ত করুন</span>
+                            </a>
+                        </li>&nbsp;&nbsp;
+                        <li class="li">
+                            <a href="#" onclick="userlist1()" class="navbttn">
+                                <span class="icon"><i class="bi bi-info-circle"></i></span>
+                                <span class="navtxt">বিজ্ঞপ্তি</span>
+                            </a>
+                        </li>&nbsp;&nbsp;
+                        <li class="li">
+                            <a href="#" class="navbttn">
+                                <span class="icon"><i class="bi bi-facebook"></i></span>
+                                <span class="navtxt">Facebook</span>
+                            </a>
+                        </li>&nbsp;&nbsp;
+                    </ul>
+                </dev>
+            </center>
+        </nav>
+
+
+        <div id="pop1" class="pop vcc">
+            <button onclick="topion()" class="btn"> <i class="bi bi-x-lg"></i></button>
+
+            <!-- root --->
+            <center>
+                <div id="data-container"></div>
+            </center>
+
+        </div>
+
+        <div id="pop2" class="pop vcc">
+            <button onclick="topion1()" class="btn"> <i class="bi bi-x-lg"></i></button>
+            <blockquote>
+<div class="imges">
+    <img src="img/448260650_2757559237733604_8677310498956021285_n.jpg" alt="about" />
+    <div class="rotetitle">নির্মাতা সম্পর্কে
     </div>
-  </header>
-  <section>
-    <nav class="botomnav">
-      <center>
-        <br>
-        <dev class="navdat">
-          <ul class="ul">
-            <li class="li">
-              <a href="#" onclick="userlist()" class="navbttn">
-                <span class="icon"><i class="bi bi-person-lines-fill"></i></span>
-                <span class="navtxt">সবার তালিকা</span>
-              </a>
-            </li>&nbsp;&nbsp;
-            <li class="li">
-              <a href="#" class="navbttn">
-                <span class="icon"><i class="bi bi-plus-square-dotted"></i></span>
-                <span class="navtxt">নতুন যুক্ত করুন</span>
-              </a>
-            </li>&nbsp;&nbsp;
-            <li class="li">
-              <a href="#" class="navbttn">
-                <span class="icon"><i class="bi bi-info-circle"></i></span>
-                <span class="navtxt">বিজ্ঞপ্তি</span>
-              </a>
-            </li>&nbsp;&nbsp;
-            <li class="li">
-              <a href="#" class="navbttn">
-                <span class="icon"><i class="bi bi-facebook"></i></span>
-                <span class="navtxt">Facebook</span>
-              </a>
-            </li>&nbsp;&nbsp;
-          </ul>
-        </dev>
-      </center>
-    </nav>
-
-
-    <div id="pop1" class="pop vcc">
-      <button onclick="topion()" class="btn"> <i class="bi bi-x-lg"></i></button>
-
-      <!-- root --->
-      <center>
-
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam</b> </span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
 </div>
-<div class="user">
-  <div class="user1">
+<br><br>
+<div class="dw1">
 
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
-
-</div>
-
-<div class="user">
-  <div class="user1">
-
-      <div class="imgbox">
-          <img
-              src="https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/313260447_3359123654358705_5337054509653355831_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs2fGc01GFlIeK-1WsUnRQBoksLzxclvoGiSwvPFyW-ufhAus5emBFSR1onjvzvlPqDIAtkEXWAN-TzH5TsbkB&_nc_ohc=7peoI_Yh1fUQ7kNvgHLm8Bd&_nc_ht=scontent.fdac27-1.fna&oh=00_AYAh3wJNV-ZWxQu7WUfHk8dSP1hV6oEnsFWbSAxHIiJgbA&oe=667DE0CD" />
-      </div>
-
-  </div>
-  <div class="user2">
-      <span class="title"><b>H Sirazul Islam Badhon</b></span>
-      <hr>
-      <span>যুগ্ম সাধারণ সম্পাদক,
-          বাংলাদেশ ছাত্রলীগ সাঁথিয়া উপজেলা শাখা পাবনা।
-      </span>
-  </div>
-  <div class="user3">
-      <p class="string">
-          <span>
-              <a href="tel:01877357091">01877357091</a> <br>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-telephone-forward"></i>
-              </a>
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-whatsapp"></i>
-              </a>
-              <!-- step 3 -->
-              <a href="tel:01877357091" class="icon btn">
-                  <i class="bi bi-envelope"></i>
-              </a>
-
-          </span>
-      </p>
-  </div>
+    
 
 </div>
 
@@ -1013,24 +107,26 @@
 
 
 
-
-      </center>
-
-    </div>
+</blockquote>
+        </div>
 
 
-  </section>
 
-  <script src="app.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-  <script>
 
-    new TypeIt("#txt", {
-      strings: "ভবানীপুর সমাজ সেবা যুব সংগঠন",
-      speed: 100,
-      waitUntilVisible: true,
-    }).go();
-  </script>
+
+    </section>
+    <script src="load.js"></script>
+    <script src="https://api-site-setting-js.vercel.app/api-site-setting.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+
+        new TypeIt("#txt", {
+            strings: "ভবানীপুর সমাজ সেবা যুব সংগঠন",
+            speed: 100,
+            waitUntilVisible: true,
+        }).go();
+    </script>
 </body>
 
 </html>

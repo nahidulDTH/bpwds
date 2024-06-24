@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.image-section img {
+    width: 200px; /* Adjust the width as needed */
+    margin-bottom: 20px;
+}
+
+.rotated-title {
+    position: absolute;
+    top: 40px; /* Adjust the top position as needed */
+    right: -60px; /* Adjust the right position as needed */
+    transform: rotate(90deg);
+    color: #f76c57;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.title {
+    background: linear-gradient(to right, #f76c57, #fca663);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.subtitle {
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message {
+    background: #fca663;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.message p {
+    margin: 0;
+}
+
+     </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xvPGnBtwlfsSVef1HqewS5y9ZxBVtvfdzg&s" alt="Illustration">
+        </div>
+        <div class="rotated-title">rote title</div>
+        <div class="title">Title 1</div>
+        <div class="subtitle">title intro</div>
+        <div class="message">
+            <p>lorem CLOUDHOSTING.COM.BD</p>
+            <p>We apologize, but this cPanel-hosted site is currently suspended. Please contact our support team for further assistance.</p>
+        </div>
+    </div>
+</body>
+</html>

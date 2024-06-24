@@ -33,6 +33,7 @@ body {
   background-image: linear-gradient(30deg, rgb(0, 255, 145), rgb(0, 128, 255));
 }
 .botomnav{
+  z-index: 100;
   position: fixed;
   bottom: 0; 
   width: 100%;
@@ -110,7 +111,7 @@ transition: all 0.4s;
   backdrop-filter: blur(10px);
   height: 100vh;
   width: 100%;
-  background-color: rgba(177, 177, 177, 0.571);
+  background-color: rgba(255, 255, 255, 0.571);
   position: fixed;
   bottom: 0;
   animation: youi 0.5s;
@@ -138,44 +139,57 @@ display: none;
   background-color: red;
   color: azure;
 }
-
-.user{
-  overflow: scroll;
-  margin-bottom: 10px;
-  font-family: bangla1;
-  color: #000000;
-  border: 2px solid #4680ff;
-  height: 100px;
-  width: 95%;
-  border-radius: 100px;
-  justify-content: space-around;
+.user {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
   display: flex;
 }
-.user1{
+.imgbox img {
+  width: 100px;
   height: 100px;
-  border-right: 1px solid #4680ff; 
-  width: 100%;
+  object-fit: cover;
 }
-.user2{
-  height: 100px;
-  border-right: 1px solid #4680ff; 
-  width: 100%;
+.user2 {
+  flex: 1;
+  padding: 10px;
 }
 .user3 {
-  height: 100px;
-  width: 100%;
-}
-.imgbox img{
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
-}
-.string{
-  font-size: 18pt;
+  padding: 10px;
 }
 a{
   text-decoration-line: none;
 }
+.imges{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.imges img{
+  height: 300px;
+  width: 300px;
+}
+.rotetitle{
+  
+  position: absolute;
+  top: 190px;
+  right: 30%;
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  font-family: bangla1;
+  transform: rotate(-90deg);
+  color: rgb(13, 202, 158);
+}
+.dw1{
+height: 200px;
+width: 100%;
+background-image: linear-gradient(50deg , rgba(0, 255, 217, 0.534) , rgba(132, 255, 0, 0.397));
+border-radius: 9px;
+box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
@@ -249,9 +263,27 @@ a{
   font-size: 18px;
 }
 .user .title{
-  font-size: 14px;
+  font-size: 19px;
 }
-.user .string {
-  font-size: 13pt;
+.imges{
+  align-items: none;
+  justify-content: none;
+  text-align: left;
 }
+.imges img{
+  height: 200px;
+  width: 200px;
+}
+.rotetitle{
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  font-family: bangla1;
+  transform: rotate(-90deg);
+  color: rgb(13, 202, 158);
+}
+
 }
