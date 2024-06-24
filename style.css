@@ -113,7 +113,7 @@ transition: all 0.4s;
   background-color: rgba(177, 177, 177, 0.571);
   position: fixed;
   bottom: 0;
-  animation: youi 1s;
+  animation: youi 0.5s;
 }
 @keyframes youi {
   0%{
@@ -140,6 +140,7 @@ display: none;
 }
 
 .user{
+  overflow: scroll;
   margin-bottom: 10px;
   font-family: bangla1;
   color: #000000;
@@ -241,6 +242,16 @@ a{
   font-size: 25px;
   font-family: bangla1;
 }
-
-
+.string{
+  font-size: 12pt;
+}
+.user .icon{
+  font-size: 18px;
+}
+.user .title{
+  font-size: 14px;
+}
+.user .string {
+  font-size: 13pt;
+}
 }
