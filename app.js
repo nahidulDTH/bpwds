@@ -22,6 +22,7 @@ function topion1(){
 }
 
 function dataLoad1(){
+  
   document.getElementById("dataload1");
 }
 function dataLoad2(){

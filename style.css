@@ -182,14 +182,27 @@ a{
   color: rgb(13, 202, 158);
 }
 .dw1{
-height: 200px;
+height: auto;
 width: 100%;
 background-image: linear-gradient(50deg , rgba(0, 255, 217, 0.534) , rgba(132, 255, 0, 0.397));
 border-radius: 9px;
 box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
+    font-family: bangla1;
+    padding: 1px;
 }
-
+.topstr{
+  margin: 0;
+  padding: 0;
+  color: #FF00A9;
+  text-align: center;
+  border-bottom: 1px solid #0050FF;
+}
+.useratn{
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  margin: 3px;
+}
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
