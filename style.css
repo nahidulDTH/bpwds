@@ -93,18 +93,21 @@ color: auto;
 cursor: pointer;
 color: #fff;
 transition: all 0.4s;
+padding: 15px;
+box-shadow: 0 0 100px 0 #fff;
 }
 .icon{
-  font-size: 30px;
+  font-size: 23px;
 }
 .navtxt{
   font-size: 15pt;
 
 }
 .navbttn:hover{
-  color: red;
-  font-size: 33px;
-
+  background-color: #ffffff;
+  border-radius: 100px;
+  color: #000;
+  box-shadow: 0 0 1px 0 #fff;
 }
 .pop{
   overflow: auto;
@@ -114,7 +117,7 @@ transition: all 0.4s;
   background-color: rgba(255, 255, 255, 0.571);
   position: fixed;
   bottom: 0;
-  animation: youi 0.5s;
+  animation: youi 0.2s;
 }
 @keyframes youi {
   0%{
