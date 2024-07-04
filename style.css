@@ -203,6 +203,13 @@ box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994)
   border-radius: 60px;
   margin: 3px;
 }
+.rootapp{
+  width: 250px;
+  height: 100px;
+  background-color: #42445A;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
