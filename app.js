@@ -42,3 +42,38 @@ function dataLoad2(){
 }
 
 
+window.addEventListener('load', () => {
+  let deferredPrompt;
+
+
+  const addToHomeBtn = document.getElementById('add-to-home-btn');
+
+  
+  addToHomeBtn.addEventListener('click', () => {
+    
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+
+      
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome == 'accepted') {
+       
+        } else {
+      
+        }
+     
+        deferredPrompt = null;
+      });
+    }
+  });
+
+ 
+  window.addEventListener('beforeinstallprompt', (event) => {
+    
+    event.preventDefault();
+   
+    deferredPrompt = event;
+    
+    addToHomeBtn.style.display = 'block';
+  });
+});

@@ -11,8 +11,9 @@
   display: flex;
   justify-content: center;
 }
-.searchbtn{
-display: none;
+
+.searchbtn {
+  display: none;
 }
 
 body {
@@ -32,16 +33,18 @@ body {
   background-color: #fff;
   background-image: linear-gradient(30deg, rgb(0, 255, 145), rgb(0, 128, 255));
 }
-.botomnav{
+
+.botomnav {
   z-index: 100;
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
   height: 60px;
   position: fixed;
   background-color: #fff;
   background-image: linear-gradient(-30deg, rgb(0, 255, 145), rgb(0, 128, 255));
 }
+
 .title {
   font-size: 33px;
   font-family: bangla1;
@@ -52,9 +55,11 @@ body {
   position: absolute;
   top: 10px;
 }
-.ddx{
- display: none;
+
+.ddx {
+  display: none;
 }
+
 .navsid {
   top: 10px;
   position: absolute;
@@ -76,40 +81,47 @@ body {
   font-family: bangla1;
 }
 
-.navdat{
+.navdat {
   color: white;
 }
-.ul{
+
+.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.li{
+
+.li {
   display: inline;
 }
-.navbttn{
-text-decoration-line: none;
-color: auto;
-cursor: pointer;
-color: #fff;
-transition: all 0.4s;
-padding: 15px;
-box-shadow: 0 0 100px 0 #fff;
+
+.navbttn {
+  text-decoration-line: none;
+  color: auto;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.4s;
+  padding: 15px;
+  box-shadow: 0 0 100px 0 #fff;
 }
-.icon{
+
+.icon {
   font-size: 23px;
 }
-.navtxt{
+
+.navtxt {
   font-size: 15pt;
 
 }
-.navbttn:hover{
+
+.navbttn:hover {
   background-color: #ffffff;
   border-radius: 100px;
   color: #000;
   box-shadow: 0 0 1px 0 #fff;
 }
-.pop{
+
+.pop {
   overflow: auto;
   backdrop-filter: blur(10px);
   height: 100vh;
@@ -119,18 +131,22 @@ box-shadow: 0 0 100px 0 #fff;
   bottom: 0;
   animation: youi 0.2s;
 }
+
 @keyframes youi {
-  0%{
-height: 0vh;
+  0% {
+    height: 0vh;
   }
-  100%{
+
+  100% {
     height: 100vh;
-      }
+  }
 }
-.vcc{
-display: none;
+
+.vcc {
+  display: none;
 }
-.btn{
+
+.btn {
   font-size: 33px;
   color: red;
   background-color: rgba(0, 0, 0, 0);
@@ -138,42 +154,51 @@ display: none;
   margin: 10px;
   cursor: pointer;
 }
-.btn:active{
+
+.btn:active {
   background-color: red;
   color: azure;
 }
+
 .user {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
   display: flex;
 }
+
 .imgbox img {
   width: 100px;
   height: 100px;
   object-fit: cover;
 }
+
 .user2 {
   flex: 1;
   padding: 10px;
 }
+
 .user3 {
   padding: 10px;
 }
-a{
+
+a {
   text-decoration-line: none;
 }
-.imges{
+
+.imges {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.imges img{
+
+.imges img {
   height: 300px;
   width: 300px;
 }
-.rotetitle{
-  
+
+.rotetitle {
+
   position: absolute;
   top: 190px;
   right: 30%;
@@ -184,39 +209,56 @@ a{
   transform: rotate(-90deg);
   color: rgb(13, 202, 158);
 }
-.dw1{
-height: auto;
-width: 100%;
-background-image: linear-gradient(50deg , rgba(0, 255, 217, 0.534) , rgba(132, 255, 0, 0.397));
-border-radius: 9px;
-box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    font-family: bangla1;
-    padding: 1px;
+
+.dw1 {
+  height: auto;
+  width: 500px;
+  background-image: linear-gradient(50deg, rgba(0, 255, 217, 0.534), rgba(132, 255, 0, 0.397));
+  border-radius: 9px;
+  box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-family: bangla1;
+  padding: 15px;
 }
-.topstr{
+
+.topstr {
   margin: 0;
   padding: 0;
   color: #FF00A9;
   text-align: center;
   border-bottom: 1px solid #0050FF;
 }
-.useratn{
+
+.useratn {
   height: 60px;
   width: 60px;
   border-radius: 60px;
   margin: 3px;
 }
-.rootapp{
+
+.rootapp {
   width: 250px;
   height: 100px;
   background-color: #42445A;
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+.donbtn{
+    color: #fff;
+    padding: 10px;
+}
+.donbtn i{
+ font-size: 24pt;
+ margin: 5px;
+ cursor: pointer;
+    
+}
+
+
+
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
-  .ddx{
+  .ddx {
     display: block;
     padding: 5px;
     border-radius: 100px;
@@ -225,13 +267,16 @@ box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994)
     margin: 8px;
     text-align: center;
   }
+
   .w80 {
     width: 96%;
   }
-  .navtxt{
+
+  .navtxt {
     font-size: 15pt;
     display: none;
   }
+
   .navsid {
     display: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -261,52 +306,63 @@ box-shadow: rgba(94, 255, 0, 0.692) 0px 50px 100px -20px, rgba(255, 0, 0, 0.994)
     font-family: bangla1;
     margin: 3px;
   }
-.searchbtn{
-  display: block;
-  top: 10px;
-  position: absolute;
-  right: 40px;
-  background-color: #fff;
-  background-image: linear-gradient(30deg, rgb(0, 255, 145), rgb(0, 128, 255));
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  cursor: pointer;
-  color: wheat;
-}
-.title {
-  font-size: 25px;
-  font-family: bangla1;
-}
-.string{
-  font-size: 12pt;
-}
-.user .icon{
-  font-size: 18px;
-}
-.user .title{
-  font-size: 19px;
-}
-.imges{
-  align-items: none;
-  justify-content: none;
-  text-align: left;
-}
-.imges img{
-  height: 200px;
-  width: 200px;
-}
-.rotetitle{
-  position: absolute;
-  top: 110px;
-  right: 0px;
-  height: 60px;
-  width: 200px;
-  font-size: 30px;
-  font-family: bangla1;
-  transform: rotate(-90deg);
-  color: rgb(13, 202, 158);
-}
 
+  .searchbtn {
+    display: block;
+    top: 10px;
+    position: absolute;
+    right: 40px;
+    background-color: #fff;
+    background-image: linear-gradient(30deg, rgb(0, 255, 145), rgb(0, 128, 255));
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    color: wheat;
+  }
+
+  .title {
+    font-size: 25px;
+    font-family: bangla1;
+  }
+
+  .string {
+    font-size: 12pt;
+  }
+
+  .user .icon {
+    font-size: 18px;
+  }
+
+  .user .title {
+    font-size: 19px;
+  }
+
+  .imges {
+    align-items: none;
+    justify-content: none;
+    text-align: left;
+  }
+
+  .imges img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .rotetitle {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    font-family: bangla1;
+    transform: rotate(-90deg);
+    color: rgb(13, 202, 158);
+  }
+  .dw1{
+    width: 330px;
+  }
+  
 }

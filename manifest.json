@@ -1,0 +1,16 @@
+{
+    "name": "ভবানীপুর সমাজ সেবা যুব সংগঠন",
+    "short_name": "ভবানীপুর সমাজ সেবা যুব সংগঠন",
+    "icons": [
+      {
+        "src": "img/448260650_2757559237733604_8677310498956021285_n.jpg",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff"
+  }
+  
