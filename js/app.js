@@ -25,17 +25,40 @@ function dataLoad1(){
   
   document.getElementById("dataload1");
 }
+
+function dataLoad3(){
+  var dataload = document.getElementById("dataLoad3").value;
+  if (dataload == "1") {
+    window.location.href="morzid.html"
+  }
+  if (dataload == "2") {
+    window.location.href="madsha.html"
+  }
+  if (dataload == "3") {
+    window.location.href="school.html"
+  }
+  if (dataload == "4") {
+    window.location.href="shop.html"
+  }
+  if (dataload == "5") {
+    window.location.href="eidha.html"
+  }
+  if (dataload == "6") {
+    window.location.href="km.html"
+  }
+} 
+
 function dataLoad2(){
   var d2 = document.getElementById("dataload2").value;
   if (d2 === "1") {
-   window.location.href="porcimpara"
+   window.location.href="/procimpara/"
   }
   if (d2 === "2") {
-    window.location.href="moddipara"
+    window.location.href="/moddipara"
 
   }
   if (d2 === "3") {
-        window.location.href="purbpara"
+        window.location.href="/purbpara"
 
   }
   
