@@ -24,7 +24,7 @@ body {
 
 
 .nav {
-
+z-index: 98;
   position: fixed;
   top: 0;
   width: 100%;
@@ -122,6 +122,7 @@ body {
 }
 
 .pop {
+  z-index: 99;
   overflow: auto;
   backdrop-filter: blur(10px);
   height: 100vh;
