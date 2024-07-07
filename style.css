@@ -250,7 +250,7 @@ a {
  font-size: 24pt;
  margin: 5px;
  cursor: pointer;
-    
+
 }
 
 
@@ -362,7 +362,8 @@ a {
     color: rgb(13, 202, 158);
   }
   .dw1{
-    width: 330px;
+    width: 300px;
+    padding: 6px;
   }
   
 }
