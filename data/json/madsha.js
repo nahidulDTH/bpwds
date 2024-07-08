@@ -31,3 +31,25 @@ const jsondata =  {
    document.getElementById('photo').src = jsondata.photo;
    document.getElementById('map').src = jsondata.map;
 
+
+function dataLoad3(){
+  var dataload = document.getElementById("dataLoad3").value;
+  if (dataload == "1") {
+    window.location.href="index.html"
+  }
+  if (dataload == "2") {
+    window.location.href="madsha.html"
+  }
+  if (dataload == "3") {
+    window.location.href="school.html"
+  }
+  if (dataload == "4") {
+    window.location.href="shop.html"
+  }
+  if (dataload == "5") {
+    window.location.href="eidha.html"
+  }
+  if (dataload == "6") {
+    window.location.href="km.html"
+  }
+} 
