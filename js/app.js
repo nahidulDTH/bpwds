@@ -29,7 +29,7 @@ function dataLoad1(){
 function dataLoad3(){
   var dataload = document.getElementById("dataLoad3").value;
   if (dataload == "1") {
-    window.location.href="morzid.html"
+    window.location.href="index.html"
   }
   if (dataload == "2") {
     window.location.href="madsha.html"

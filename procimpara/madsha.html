@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   
+
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="/img/448260650_2757559237733604_8677310498956021285_n.jpg" type="image/x-icon">
@@ -30,13 +30,13 @@
                     <option value="1">ভবানীপুর</option>
                 </select>
                 <select onchange="dataLoad2()" class="sw" name="" id="dataload2">
-                    <option value="1">পশ্চিমপাড়া</option>
+                    <option value="1" selected>পশ্চিমপাড়া</option>
                     <option value="2">মধ্যপাড়া</option>
                     <option value="3">পূর্বপাড়া</option>
                 </select>
                 <select onchange="dataLoad3()" class="sw" name="" id="dataLoad3">
                     <option value="1">মসজিদ</option>
-                    <option value="2">মাদ্রাসা</option>
+                    <option value="2" selected>মাদ্রাসা</option>
                     <option value="3">বিদ্যালয়</option>
                     <option value="4">দোকান</option>
                     <option value="5">ঈদগা</option>
@@ -127,12 +127,12 @@
     </section>
     <!---------------------------------------- Main Box------------------------------------------->
     <section class="mainboxx">
-        
+
         <center>
-          
+
             <blockquote>
                 <div class="imglgbox">
-                    <img id="photo"  alt="View Photo" class="imgpic" width="1000" height="600">
+                    <img id="photo" alt="View Photo" class="imgpic" width="1000" height="600">
                 </div>
             </blockquote>
         </center>
@@ -144,14 +144,14 @@
                     <p id="paragrap">
                     </p>
                     <ul id="alllist" class="ul1">
-                  <!--? Create a rendomly in server  -->
+                        <!--? Create a rendomly in server  -->
                     </ul>
                     <!-- google maps api -->
-                     <h3><i class="bi bi-geo-alt-fill"></i>সরাসরি ম্যাপ দেখুন <i class="bi bi-arrow-down"></i></h3>
+                    <h3><i class="bi bi-geo-alt-fill"></i>সরাসরি ম্যাপ দেখুন <i class="bi bi-arrow-down"></i></h3>
                     <div class="imglgbox">
-                        <iframe id="map" class="imgpic" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1000" height="600"></iframe>
+                        <iframe id="map" class="imgpic" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" width="1000" height="600"></iframe>
                     </div>
-                    
                     <i class="alert">This website is loading data on the Vercel/NahidHK server.</i>
                 </blockquote>
             </div>
@@ -169,7 +169,7 @@
     <script src="/js/app.js"></script>
     <script src="/js/data.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <script src="/data/json/prcimpara.js"></script>
+    <script src="/data/json/madsha.js"></script>
     <script>
         new TypeIt("#txt", {
             strings: "ভবানীপুর সমাজ সেবা যুব সংগঠন",

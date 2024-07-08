@@ -317,6 +317,10 @@ a {
   color: #585858;
   font-size: 18px;
 }
+.mapsio{
+  height: 400px;
+  width: 550px;
+}
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
