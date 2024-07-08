@@ -1,8 +1,11 @@
 @font-face {
   font-family: bangla1;
-  src: url("font/banglafont.ttf");
+  src: url("/font/banglafont.ttf");
 }
-
+@font-face {
+  font-family: bangla2;
+  src: url("/font/icode.ttf");
+}
 .w80 {
   width: 80%;
 }
@@ -20,6 +23,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(240, 240, 240);
+    font-family: bangla2;
+
  
 }
 
