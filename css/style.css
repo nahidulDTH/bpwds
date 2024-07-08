@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(240, 240, 240);
-    font-family: bangla2;
+
 
  
 }
@@ -297,6 +297,11 @@ a {
   width: 100%;
   max-width: 800px;
   height: auto;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 .paraghbox{
   width: 50%;
@@ -315,6 +320,9 @@ a {
 /*=================================== css media quruy mobile ============================= */
 
 @media only screen and (max-width: 1000px) {
+  body{
+    font-family: bangla2;
+  }
   .paraghbox{
     width: 100%;
     height: auto;
